@@ -1,6 +1,8 @@
 from flask import Flask, request, jsonify, render_template
+from flask.ext.bower import Bower
 
 app = Flask(__name__)
+Bower(app)
 
 
 @app.route('/')

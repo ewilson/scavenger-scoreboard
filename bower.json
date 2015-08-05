@@ -1,0 +1,18 @@
+{
+  "name": "scavenger_scoreboard",
+  "version": "0.0.0",
+  "authors": [
+    "Eric Wilson <wilson.eric.n@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5"
+  }
+}
