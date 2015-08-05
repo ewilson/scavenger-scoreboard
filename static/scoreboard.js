@@ -1,5 +1,15 @@
 $(document).ready(function(){
 
-   alert('HELLO from jQuery!');
+    $.ajax({
+        url: '/score',
+        type: 'GET',
+        dataType: 'json',
+        success: function() {
+            alert("success!")
+        },
+        error: function() {
+            alert("error");
+        }
+    });
 
 });
