@@ -9,7 +9,12 @@ Bower(app)
 def index():
     return render_template('index.html')
 
-sb_data = {}
+sb_data = {'sb': [
+    {'pid': 1, 'player_name': 'Dalton & Riley',
+     'results': [1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0]},
+    {'pid': 2, 'player_name': 'Grant & Daniel',
+     'results': [1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0]}
+    ]}
 
 
 @app.route('/score', methods=['GET', 'POST'])
