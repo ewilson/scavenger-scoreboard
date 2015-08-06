@@ -1,0 +1,28 @@
+.row {
+    clear: both;
+}
+
+.box {
+    height: 60px;
+    border-radius: 5px;
+    border: 2px solid #000000;
+    margin: 8px;
+    float: left;
+}
+
+.result {
+    width: 60px;
+    background-color: darkgrey;
+}
+
+.correct {
+    background-color: green;
+}
+
+.incorrect {
+    background-color: red;
+}
+
+.unanswered {
+    background-color: whitesmoke;
+}

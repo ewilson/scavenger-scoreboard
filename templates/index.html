@@ -5,11 +5,50 @@
     <title>Scoreboard</title>
     <link rel="stylesheet" href="{{ url_for('bower.static', filename='bootstrap/dist/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ url_for('bower.static', filename='bootstrap/dist/css/bootstrap-theme.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <script src="{{ url_for('bower.static', filename='jquery/dist/jquery.min.js') }}"></script>
     <script src="{{ url_for('bower.static', filename='bootstrap/dist/js/bootstrap.min.js') }}"></script>
     <script src="{{ url_for('static', filename='scoreboard.js') }}" type="text/javascript"></script>
 </head>
 <body>
-    <h1>Scoreboard!</h1>
+    <div class="container">
+        <h1>Scoreboard!</h1>
+
+        <div class="row">
+            <div class="box result correct"></div>
+            <div class="box result incorrect"></div>
+            <div class="box result unanswered"></div>
+            <div class="box result"></div>
+            <div class="box result correct"></div>
+            <div class="box result incorrect"></div>
+            <div class="box result unanswered"></div>
+            <div class="box result"></div>
+            <div class="box result correct"></div>
+            <div class="box result incorrect"></div>
+            <div class="box result unanswered"></div>
+            <div class="box result"></div>
+            <div class="box result incorrect"></div>
+            <div class="box result unanswered"></div>
+            <div class="box result"></div>
+        </div>
+        <div class="row">
+            <div class="box result correct"></div>
+            <div class="box result incorrect"></div>
+            <div class="box result unanswered"></div>
+            <div class="box result"></div>
+            <div class="box result correct"></div>
+            <div class="box result incorrect"></div>
+            <div class="box result unanswered"></div>
+            <div class="box result"></div>
+            <div class="box result correct"></div>
+            <div class="box result incorrect"></div>
+            <div class="box result unanswered"></div>
+            <div class="box result"></div>
+            <div class="box result incorrect"></div>
+            <div class="box result unanswered"></div>
+            <div class="box result"></div>
+        </div>
+
+    </div>
 </body>
 </html>
