@@ -12,7 +12,6 @@ def index():
 sb_data = {'sb': []}
 
 
-#
 # To Post a score send {"pid": 0, "results": [ ... ]}
 #
 @app.route('/score', methods=['GET', 'POST'])
@@ -27,7 +26,6 @@ def score():
     return jsonify(**sb_data)
 
 
-#
 # To Post a new player, send {"player_name": "My Name"}
 #
 @app.route('/player', methods=['POST'])
@@ -41,4 +39,4 @@ def player():
     return jsonify(**new_player)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0')
