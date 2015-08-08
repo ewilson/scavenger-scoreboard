@@ -3,6 +3,7 @@ $(document).ready(function(){
     var update = function(data) {
         var players = data['sb'];
         var $scores = $('#scores');
+        $('.row').remove();
         for (var i = 0; i < players.length; i++) {
             var player = players[i];
             var name = player.player_name;
@@ -17,11 +18,14 @@ $(document).ready(function(){
         }
     };
 
-    $.ajax({
-        url: '/score',
-        type: 'GET',
-        dataType: 'json',
-        success: update
-    });
+    var poll = function() {
+        $.ajax({
+            url: '/score',
+            type: 'GET',
+            dataType: 'json',
+            success: update
+        });
+    };
 
+    setInterval(poll,1000);
 });
